@@ -1,0 +1,9 @@
+Заметки
+1. Если надо создать бд, а пишет что пользователя не существует и тд. 
+sudo su - postgres - заходит в линукс под постгресом
+2. Чтобы провести миграции надо установить homebrew и установить пакет migrate на голанге
+а если опять же возникает ошибка доступа 
+migrate -path migrations -database "postgres://localhost/restapi_dev?user=postgres&password=postgres&sslmode=disable" up|down
+4. https://stackoverflow.com/questions/30641512/create-database-from-command-line
+5. https://pgcookbook.ru/article/could_not_connect_to_server_connection_refused.html
+6. перезагрузка постгреса  sudo service postgresql restart
